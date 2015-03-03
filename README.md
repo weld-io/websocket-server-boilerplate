@@ -24,3 +24,5 @@ Found in `/test-client` folder.
 ## Current problem
 
 Socket.io handshake fails, so client tries to connect over HTTP repeatedly.
+
+Can you solve this? Please ping me on tom@weld.io or @tomsoderlund if you do!
