@@ -2,7 +2,7 @@
 
 **Note**: work in progress since it’s not working yet - [see StackOverflow post](http://stackoverflow.com/questions/27998407/socket-io-cannot-connect-resorts-to-polling).
 
-This is an attempt to provide a boilerplate for a web socket-based “micro service” running on Node.js.
+This is an attempt to provide a boilerplate for a websocket-based “micro service” running on Node.js.
 
 Client and server will be running on different machines:
 
