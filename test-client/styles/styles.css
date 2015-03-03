@@ -1,0 +1,124 @@
+* {
+	margin:  0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Helvetica Neue', sans-serif;
+	font-size: 1em;
+	color: #666;
+	background-color: rgb(233, 233, 233);
+}
+
+p {
+	margin-bottom: 0.5em;
+}
+
+h1, h2, h3, h4 {
+}
+
+ul, ol {
+	margin: 0 0 0.8em 1.1em;
+}
+
+/*---------- LINKS ---------- */
+
+a { color: #09F; }
+a:hover { color: #0BF; }
+a:active { color: #27D1FF; }
+a:visited { /* color: #69C; */ }
+
+/*---------- FORMS ---------- */
+
+input, textarea, select, button, .button {
+	font-family: 'Helvetica Neue', sans-serif;
+	font-size: 1em;
+	color: #555;
+	border-radius: 0.4em;
+	padding: 0.3em 0.6em;
+	outline: none;
+}
+
+input[type="text"] {
+	width: 30%;
+}
+
+textarea {
+	width: 100%;
+	height: 8em;
+}
+
+textarea:disabled {
+	color: #BBB;
+}
+
+input[type="radio"], input[type="checkbox"] {
+	width:  1em;
+	height: 1em;
+	background-color: #9dbadf;
+}
+
+input[type="submit"], input[type="button"], button, .button {
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+	text-decoration: none;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	text-shadow: -1px -1px 1px #829ab9;
+	border: none;
+	background-color: #9dbadf;
+	background-repeat: none;
+	background-size: 100% 105%;
+	-webkit-appearance: none;
+	margin: 0.2em 0;
+	width: 100%;
+	padding: 1em 1.5em;
+}
+
+input[type="submit"]:hover, input[type="button"]:hover, button:hover, .button:hover {
+	background-color: #aecef7;
+	color: white;
+}
+
+input[type="submit"]:active, input[type="button"]:active, button:active, .button:active {
+	left: 1px;
+	top:  2px;
+}
+
+input.action, button.action, a.action {
+	text-shadow: -1px -1px 1px #b83231;
+	background-color: #f54241;
+	color: white;
+}
+
+input.action:hover, button.action:hover, a.action:hover {
+	background-color: #f55756;
+}
+
+/*---------- TABLES ----------*/
+
+table {
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 0.2em;
+}
+
+th {
+	font-weight: bold;
+	vertical-align: bottom;
+}
+
+td {
+	vertical-align: top;
+}
+
+/*----- CUSTOM STYLES -----*/
+
+#content {
+	margin: 1em;
+}
