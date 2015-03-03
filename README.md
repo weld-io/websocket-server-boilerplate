@@ -1,10 +1,8 @@
 # Socket.io Client/Server Boilerplate
 
-**Note**: work in progress since it’s not working yet - [see StackOverflow post](http://stackoverflow.com/questions/27998407/socket-io-cannot-connect-resorts-to-polling).
+Boilerplate for a websocket-based “micro service” server running on Node.js, Express, MongoDB.
 
-This is an attempt to provide a boilerplate for a websocket-based “micro service” running on Node.js.
-
-Client and server will be running on different machines:
+The client can run on another machine and connect over websockets:
 
 ![Chart](http://i.stack.imgur.com/eC1Va.png)
 
@@ -14,15 +12,19 @@ Start with:
 
 	grunt serve
 
+The server is based on the [angular-fullstack](https://github.com/DaftMonk/generator-angular-fullstack) generator and contains Node.js, Express, MongoDB.
+
 ## Test Client
 
 Found in `/test-client` folder.
 
+Start with:
+
 	cd test-client
 	python -m SimpleHTTPServer 9007
 
-## Current problem
+The test client is written in AngularJS and uses [angular-socket-io](https://github.com/btford/angular-socket-io).
 
-Socket.io handshake fails, so client tries to connect over HTTP repeatedly.
+## Thanks to
 
-Can you solve this? Please ping me on tom@weld.io or @tomsoderlund if you do!
+Big thanks to [Leszek Hanusz](http://stackoverflow.com/users/1221252/leszek-hanusz) for solving [my Socket.io issues](http://stackoverflow.com/questions/27998407/socket-io-cannot-connect-resorts-to-polling).

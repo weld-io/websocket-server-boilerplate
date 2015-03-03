@@ -5,6 +5,6 @@
 module.exports = {
   // MongoDB connection options
   mongo: {
-    uri: 'mongodb://localhost/weldcomments-test'
+    uri: 'mongodb://localhost/socketio-server-app-test'
   }
 };

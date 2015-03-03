@@ -7,7 +7,7 @@
 
 module.exports = {
   DOMAIN:           'http://localhost:9000',
-  SESSION_SECRET:   'weldcomments-secret',
+  SESSION_SECRET:   'socketio-server-app-secret',
 
   // Control debug level for modules using visionmedia/debug
   DEBUG: ''

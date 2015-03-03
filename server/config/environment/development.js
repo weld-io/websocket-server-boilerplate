@@ -5,7 +5,7 @@
 module.exports = {
   // MongoDB connection options
   mongo: {
-    uri: 'mongodb://localhost/weldcomments-dev'
+    uri: 'mongodb://localhost/socketio-server-app-dev'
   },
 
   seedDB: true

@@ -7,15 +7,16 @@
 var config = require('./environment');
 
 // When the user disconnects.. perform this
-function onDisconnect(socket) {
+function onDisconnect (socket) {
 }
 
 // When the user connects.. perform this
-function onConnect(socket) {
-	// When the client emits 'info', this listens and executes
-	socket.on('info', function (data) {
-		console.info('[%s] %s', socket.address, JSON.stringify(data, null, 2));
-		socket.emit('pong', 'OK!');
+function onConnect (socket) {
+
+	// When the client emits 'ping', this listens and executes
+	socket.on('ping', function (data) {
+		console.info('ping [%s] %s', socket.address, JSON.stringify(data, null, 2));
+		socket.emit('pong', 'This is coming from the Socket.io Server - ' + new Date());
 	});
 
 	// Insert sockets below
