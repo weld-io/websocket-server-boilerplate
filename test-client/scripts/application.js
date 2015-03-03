@@ -16,7 +16,6 @@ socketTestApp.factory('mySocket', function (socketFactory) {
 	});
 	myIoSocket.send('hi there');
 
-	
 	var mySocket = socketFactory({
 		ioSocket: myIoSocket
 	});
@@ -29,31 +28,12 @@ socketTestApp.factory('mySocket', function (socketFactory) {
 
 socketTestApp.controller('SocketTestCtrl', function ($scope, mySocket) {
 
-	$scope.testVal = "adfasd";
+	$scope.statusMessage = "Angular is online.";
 
-	$scope.$on('socket:pong', function (ev, data) {
-		console.log('socket:pong', ev, data);
+	$scope.$on('socket:pong', function (event, data) {
+		console.log('socket:pong', event, data);
 	});
 
-	//mySocket.emit('info');
+	mySocket.emit('info');
 
 });
-
-
-
-
-
-// var MYAPP = MYAPP || {};
-
-// (function(MYAPP) {
-
-// 	MYAPP.log = function (str) {
-// 		console.log(str);
-// 	};
-
-// }(MYAPP));
-
-
-// (function($) {
-	
-// }(jQuery));
