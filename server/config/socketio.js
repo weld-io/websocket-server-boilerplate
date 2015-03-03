@@ -38,12 +38,17 @@ module.exports = function (socketio) {
 	//   handshake: true
 	// }));
 
+
+	// Set allowed origins
 	//socketio.set('origins', 'http://localhost:9007');
+
+	// Set allowed polling mechanisms
+	//socketio.set('transports', ['xhr-polling']);
 
 	socketio.on('connection', function (socket) {
 		socket.address = socket.handshake.address !== null ?
-						socket.handshake.address.address + ':' + socket.handshake.address.port :
-						process.env.DOMAIN;
+			socket.handshake.address.address + ':' + socket.handshake.address.port :
+			process.env.DOMAIN;
 
 		socket.connectedAt = new Date();
 
