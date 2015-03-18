@@ -1,4 +1,4 @@
-# Socket.io Client/Server Boilerplate
+# Websocket Server Boilerplate
 
 Boilerplate for a websocket-based “micro service” server running on Node.js, Express, MongoDB.
 
