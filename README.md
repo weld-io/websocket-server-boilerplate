@@ -1,6 +1,6 @@
 # Websocket Server Boilerplate
 
-Boilerplate for a websocket-based “micro service” server running on Node.js, Express, MongoDB.
+Boilerplate for a websocket-based “micro service” server running on Socket.io, Node.js, Express, MongoDB.
 
 This is for when you DON’T want websocket client files to be hosted on the websocket server.
 
